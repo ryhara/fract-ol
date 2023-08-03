@@ -6,7 +6,7 @@
 /*   By: ryhara <ryhara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/03 11:23:55 by ryhara            #+#    #+#             */
-/*   Updated: 2023/08/03 17:49:55 by ryhara           ###   ########.fr       */
+/*   Updated: 2023/08/03 19:56:03 by ryhara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,10 +47,10 @@ typedef struct	s_vars {
 
 	t_data img;
 
-	double x;
-	double y;
-	double a;
-	double b;
+	float x;
+	float y;
+	float a;
+	float b;
 }				t_vars;
 
 void	my_mlx_pixel_put(t_data *data, int x, int y, int color);
@@ -60,10 +60,13 @@ int		mouse_hook(int button, int x, int y, t_vars *vars);
 void	mandelbrot(void);
 void	mandelbrot_calc(t_vars *vars);
 void	mandelbrot_drow(t_vars *vars);
-void	julia(void);
+void	julia(float a, float b);
 void	julia_calc(t_vars *vars);
 void	julia_drow(t_vars *vars);
 int		ft_strcmp(const char *s1, const char *s2);
+double	ft_atof(const char *string);
+
+BOOLEAN	check_args(char **argv);
 
 
 #endif

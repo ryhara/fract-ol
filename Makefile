@@ -6,12 +6,12 @@
 #    By: ryhara <ryhara@student.42tokyo.jp>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/03 10:16:07 by ryhara            #+#    #+#              #
-#    Updated: 2023/08/03 17:56:10 by ryhara           ###   ########.fr        #
+#    Updated: 2023/08/03 20:08:58 by ryhara           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = fractol
-SRCS =  main.c hooks.c mandelbrot.c ft_strcmp.c julia.c
+SRCS =  main.c hooks.c mandelbrot.c ft_strcmp.c julia.c ft_atof.c check_args.c
 OBJS = $(SRCS:%.c=$(OBJDIR)%.o)
 OBJDIR = ./obj/
 CC = cc

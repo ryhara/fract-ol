@@ -6,13 +6,13 @@
 /*   By: ryhara <ryhara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/03 17:03:52 by ryhara            #+#    #+#             */
-/*   Updated: 2023/08/03 17:49:29 by ryhara           ###   ########.fr       */
+/*   Updated: 2023/08/03 20:01:27 by ryhara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fractol.h"
 
-void julia(void)
+void julia(float a, float b)
 {
 	t_vars	vars;
 
@@ -21,6 +21,8 @@ void julia(void)
 	vars.img.img = mlx_new_image(vars.mlx, WIDTH, HEIGHT);
 	vars.img.addr = mlx_get_data_addr(vars.img.img, &vars.img.bits_per_pixel, &vars.img.line_length,
 								&vars.img.endian);
+	vars.a = a;
+	vars.b = b;
 	julia_drow(&vars);
 
 	mlx_put_image_to_window(vars.mlx, vars.win, vars.img.img, 0, 0);
