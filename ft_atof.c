@@ -6,7 +6,7 @@
 /*   By: ryhara <ryhara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/03 18:34:15 by ryhara            #+#    #+#             */
-/*   Updated: 2023/08/03 20:09:56 by ryhara           ###   ########.fr       */
+/*   Updated: 2023/08/04 09:42:37 by ryhara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ double	ft_atof(const char *string)
 			string++;
 			while (*string >= '0' && *string <= '9')
 			{
-				sm_num = sm_num * 0.1 + (*string - '0');
+				sm_num = sm_num * 0.1 + (*string - '0') * 0.1;
 				string++;
 			}
 			break ;
