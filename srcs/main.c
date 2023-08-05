@@ -6,7 +6,7 @@
 /*   By: ryhara <ryhara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/03 10:19:21 by ryhara            #+#    #+#             */
-/*   Updated: 2023/08/05 18:55:22 by ryhara           ###   ########.fr       */
+/*   Updated: 2023/08/05 19:02:06 by ryhara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	main(int argc, char **argv)
 		if (ft_strcmp("julia", argv[1]))
 			return (ft_putexample());
 		if (!check_args(argc, argv))
-			return (ft_puterr("Input two float numbers from -2 to 2\n"));
+			return (ft_putexample());
 		if (!ft_strcmp("julia", argv[1]))
 			julia(ft_atof(argv[2]), ft_atof(argv[3]));
 	}

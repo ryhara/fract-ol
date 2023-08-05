@@ -6,7 +6,7 @@
 /*   By: ryhara <ryhara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/05 11:19:22 by ryhara            #+#    #+#             */
-/*   Updated: 2023/08/05 18:36:09 by ryhara           ###   ########.fr       */
+/*   Updated: 2023/08/05 19:01:57 by ryhara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ int	ft_putexample(void)
 {
 	ft_puterr("Available fractal sets:\n");
 	ft_puterr("・mandelbrot (e.g.) $ ./fractol mandelbrot\n");
-	ft_puterr("・julia      (e.g.) $ ./fractol julia float_a float_b\n");
+	ft_puterr("・julia      (e.g.) $ ./fractol julia float_a float_b ");
+	ft_puterr("(float numbers from -2 to 2)\n");
 	return (1);
 }
