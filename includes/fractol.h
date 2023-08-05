@@ -6,7 +6,7 @@
 /*   By: ryhara <ryhara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/03 11:23:55 by ryhara            #+#    #+#             */
-/*   Updated: 2023/08/05 18:54:37 by ryhara           ###   ########.fr       */
+/*   Updated: 2023/08/05 19:09:55 by ryhara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,18 +60,17 @@ int		close_x(t_data *data);
 int		mouse_hook_mandel(int button, int x, int y, t_data *data);
 int		mouse_hook_julia(int button, int x, int y, t_data *data);
 
-void	mandelbrot(void);
-void	mandelbrot_drow(t_data *data);
-
-void	julia(float a, float b);
-void	julia_drow(t_data *data);
-
 void	color_change_mandelbrot(t_data *data, int button);
 void	color_change_julia(t_data *data, int button);
 void	zoom_in_mandelbrot(t_data *data);
 void	zoom_out_mandelbrot(t_data *data);
 void	zoom_in_julia(t_data *data);
 void	zoom_out_julia(t_data *data);
+
+void	mandelbrot(void);
+void	mandelbrot_drow(t_data *data);
+void	julia(float a, float b);
+void	julia_drow(t_data *data);
 
 BOOLEAN	check_args(int argc, char **argv);
 int		ft_strcmp(const char *s1, const char *s2);
