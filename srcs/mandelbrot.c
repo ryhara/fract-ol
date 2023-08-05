@@ -6,7 +6,7 @@
 /*   By: ryhara <ryhara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/03 14:27:06 by ryhara            #+#    #+#             */
-/*   Updated: 2023/08/05 18:31:18 by ryhara           ###   ########.fr       */
+/*   Updated: 2023/08/05 18:41:16 by ryhara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ static void	mandelbrot_put(t_data *data, int i, int j)
 
 	k = 0;
 	mandelbrot_set(data, i, j, data->size);
-	while (k < 100)
+	while (k < CALC_COUNT)
 	{
 		mandelbrot_calc(data);
 		if (data->x * data->x + data->y * data->y > 4)

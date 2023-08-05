@@ -6,7 +6,7 @@
 /*   By: ryhara <ryhara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/03 11:23:55 by ryhara            #+#    #+#             */
-/*   Updated: 2023/08/05 18:32:57 by ryhara           ###   ########.fr       */
+/*   Updated: 2023/08/05 18:54:37 by ryhara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,14 @@
 # define ZOOM_OUT 4
 # define ZOOM_IN 5
 # define ESC_KEY 53
-# define WIDTH 1000
-# define HEIGHT 1000
+# define WIDTH 720
+# define HEIGHT 720
+# define CALC_COUNT 50
 
 # include <limits.h>
 # include <stdlib.h>
 # include <unistd.h>
 # include <math.h>
-# include <stdio.h>
 
 # include "../mlx/mlx.h"
 
