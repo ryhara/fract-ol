@@ -1,26 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   check_args.c                                       :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ryhara <ryhara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/03 17:31:06 by ryhara            #+#    #+#             */
-/*   Updated: 2023/08/03 19:57:35 by ryhara           ###   ########.fr       */
+/*   Created: 2023/08/03 17:17:17 by ryhara            #+#    #+#             */
+/*   Updated: 2023/08/05 12:22:19 by ryhara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fractol.h"
 
-BOOLEAN check_args(char **argv)
+int	ft_strcmp(const char *s1, const char *s2)
 {
-	float	a;
-	float	b;
+	unsigned char	*tmp1;
+	unsigned char	*tmp2;
 
-	a = ft_atof(argv[2]);
-	b = ft_atof(argv[3]);
-	if (a < -2 || a > 2 || b < -2 || b > 2)
-		return (FALSE);
-	else
-		return (TRUE);
+	tmp1 = (unsigned char *)s1;
+	tmp2 = (unsigned char *)s2;
+	while ((*tmp1 || *tmp2))
+	{
+		if (*tmp1 != *tmp2)
+			return (*tmp1 - *tmp2);
+		tmp1++;
+		tmp2++;
+	}
+	return (0);
 }
