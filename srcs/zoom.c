@@ -6,7 +6,7 @@
 /*   By: ryhara <ryhara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/05 16:36:39 by ryhara            #+#    #+#             */
-/*   Updated: 2023/08/05 18:11:26 by ryhara           ###   ########.fr       */
+/*   Updated: 2023/08/06 09:36:55 by ryhara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	zoom_in_julia(t_data *data)
 	data->addr = mlx_get_data_addr(data->img, &data->bits_per_pixel,
 			&data->line_length, &data->endian);
 	data->size = data->size * 0.9;
-	data->base_coler = data->base_coler / 0.1;
+	data->base_coler = data->base_coler * 2;
 	if (data->base_coler < 1)
 		data->base_coler = 0x00FFFF;
 	julia_drow(data);
@@ -55,7 +55,7 @@ void	zoom_out_julia(t_data *data)
 	data->addr = mlx_get_data_addr(data->img, &data->bits_per_pixel,
 			&data->line_length, &data->endian);
 	data->size = data->size * 1.1;
-	data->base_coler = data->base_coler / 0.1;
+	data->base_coler = data->base_coler * 2;
 	if (data->base_coler < 1)
 		data->base_coler = 0x00FFFF;
 	julia_drow(data);

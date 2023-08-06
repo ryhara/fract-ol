@@ -6,7 +6,7 @@
 /*   By: ryhara <ryhara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/03 17:31:06 by ryhara            #+#    #+#             */
-/*   Updated: 2023/08/05 17:25:27 by ryhara           ###   ########.fr       */
+/*   Updated: 2023/08/06 09:46:10 by ryhara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,12 @@ static BOOLEAN	check_number(char *s, int j)
 		if (s[j] == '.')
 		{
 			j++;
+			if (num == 2)
+			{
+				while (s[j] == '0')
+					j++;
+				break ;
+			}
 			while (s[j] >= '0' && s[j] <= '9')
 				j++;
 			break ;
