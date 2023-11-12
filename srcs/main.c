@@ -6,7 +6,7 @@
 /*   By: ryhara <ryhara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/03 10:19:21 by ryhara            #+#    #+#             */
-/*   Updated: 2023/08/05 19:02:06 by ryhara           ###   ########.fr       */
+/*   Updated: 2023/11/12 22:34:30 by ryhara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,5 @@ int	main(int argc, char **argv)
 // ./fractol julia -0.15652 1.03225
 // ./fractol julia -0.12 0.74
 // ./fractol julia -0.39054 -0.58679
-// ./fractol julia 0.11031 -0.67037
 // ./fractol julia 0.11031 -0.67037
 // ./fractol julia -0.74543 0.11301
